@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int prime(int n)
+{
+int flag=0,i;
+for(i=1;i<=n;i++)
+{
+if(n%i==0)
+flag++;
+}
+if(flag==2)
+return 1;
+else
+return 0;
+}
+int main()
+{
+int n,i;
+cout<<"Enter a number"<<endl;
+cin>>n;
+for(i=1;i<=n;i++)
+{
+int p=prime(i);
+if(p==1)
+cout<<i<<" ";
+
+}
+}
