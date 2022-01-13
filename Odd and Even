@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+void even_numbers(int n)
+{
+for(int i=1;i<=n;i+=2)
+	cout<<i;
+}
+void odd_numbers(int n)
+{
+for(int i=2;i<=n;i+=2)
+	cout<<i;
+}
+int main()
+{
+int n;
+cin>>n;
+even_numbers(n);
+cout<<endl;
+odd_numbers(n);
+}
